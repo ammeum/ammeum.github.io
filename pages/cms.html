@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="nb">
+	<head>
+		<meta charset="utf-8">
+		<meta name="keywords" content="CMS, SEO, utvikling, universell utforming, HTML 5, sosiale medier, analyse, responsivt design">
+		<meta name="description" content="Dette er en samleside for webutvikling laget av student ved Høgskolen i Østfold">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Open Graph/facebook -->
+		<meta property="fb:app_id" content="4609188539168792"/>
+		<meta property="og:title" content="Samleside for Webutvikling"/>
+		<meta property="og:url" content="https://github.com/ammeum/ammeum.github.io"/> <!-- Brukte github istedet for itstud for å sjekke at det fungerte -->
+		<meta property="og:type" content="article"/>
+		<meta property="og:image" content="../res/codecomputer1.jpg"/>
+		<meta property="og:description" content="Samleside for webutvikling av student ved Høgskolen i Østfold"/>
+
+		<!-- Twitter -->
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:creator" content="@ammeum">
+		<meta name="twitter:title" content="Samleside for webutvikling">
+		<meta name="twitter:description" content="Dette er en samleside med artikler som omhandler deler av webutvilkling av student ved høgskolen i østfold">
+		<meta name="twitter:image" content="../res/codecomputer1.jpg">
+
+		<link rel="Stylesheet" href="../style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">		
+		<script src="../javascript/myscript.js"></script>
+		<title>CMS - itstud</title>
+		<link rel="icon" type="image/x-icon" href="../res/favicon.ico.png"> <!-- Kode lånt fra w3schools https://www.w3schools.com/html/html_favicon.asp -->
+	</head>
+	<body>
+		<div id="grid-container">
+			<header id="page-header">
+			</header>
+			<nav tabindex="0">
+				<a href="../index.html"><img class="logo" src="../res/logo12.png" alt="Hjem"></a> <!--Logo laget selv i adobe illustrator.-->
+				<ol id="breadcrumbs" itemscope itemtype="https://schema.org/BreadcrumbList">
+					<li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+						<a itemprop="item" href="../index.html"><span itemprop="name">Hjem</span></a>
+						<meta itemprop="position" content="1">
+					</li>
+					<li class="activepage">CMS</li>
+				</ol>
+				<i class="fa fa-bars" onclick="mobilMenu()"></i>
+				<ul id="ham" class="top-menu">
+					<li class="dropdown-point">
+					<a class="hiddenart" href="#">Artikler</a>
+					<ul class="dropdown-main">
+						<li><a href="../index.html">HJEM</a></li>
+						<li><a href="uuvsseo.html">UU VS SEO</a></li>
+						<li><a href="cms.html">CMS</a></li>
+						<li><a href="analyse.html">ANALYSE</a></li>
+						<li><a href="kontakt.html">KONTAKT OSS</a></li>
+					</ul>
+					</li>
+				</ul>
+			</nav>
+			<main>
+				<article class="pageart">
+					<section class="column">
+						<section>
+							<h1>CONTENT MANAGEMENT SYSTEMS</h1>
+							<p>
+								Content management system eller CMS er, som det ligger i navnet, et hjelpemiddel som behandler og administrerer innhold. Vi har noen ulike typer CMS, som fungerer til litt ulik bruk. Noen av de er enklere å administrere av uerfarne personer, mens noen av de er litt mer avanserte, og med flere muligheter. I denne artikkelen går vi gjennom noen av de ulike CMS løsningene som finnes, og sammenligner de med hverandre.
+							</p>
+							<h2>HEADLESS CMS</h2>
+							<p>
+								Hovedjobben til et headless CMS er å lagre og håndtere innholdet. Vi kan se på headless CMS som en persons kropp, hvor hodet er statisk kode på front-end som kun kan vises på en enhet og resterende er back-end (funksjonalitet). I headless CMS separeres hodet fra kroppen, og dette gir mulighet for å presentere back-end innholdet med så mange forskjellige «hoder» man ønsker i stedet for å måtte kode front-end og back-end innhold som kun fungerer med hverandre, på en enhet. Headless CMS gir deg mulighet til å implementere innhold til hvilket som helst system, software eller webside ved kun å hente ting fra det API'et som hører til det CMS som arbeides i. Et API gjør at to applikasjoner enkelt kan kommunisere og dele data med hverandre.
+							</p>
+							<p>
+								Det finnes mange ulike headless cms-systemer, noen av de mest kjente og brukte er: Disclaimer, Strapi, Storyblok og Sanity. Disse blir også kalt Component Content Management system.
+							</p>
+							<h3>Fordeler med headless CMS</h3>
+							<ul>
+								<li>
+									Et headless CMS er kompatibelt og fleksibelt, som gjør at du kan lage og levere innhold når du vil.
+								</li>
+								<li>
+									Det går raskere å implementere ting i et headless CMS enn i for eksempel et tradisjonelt CMS. 
+								</li>
+							</ul>
+							<h3>Ulemper med headless CMS</h3>
+							<ul>
+								<li>
+									Det er større behov for flere utviklere for å håndtere blant annet all front-end som blir brukt til å levere innhold til forskjellige kanaler. Derfor koster det fort mer penger.
+								</li>
+								<li>
+									Det er vanskelig for et markedsføringsteam å redigere innhold.
+								</li>
+							</ul>
+						</section>
+						<section>
+							<img class="artimg" src="../res/headless.png" alt="Illustrasjon av en person, med ulike symboler som hoder, headless cms"><!-- Illustrasjonen er laget selv -->
+						</section>
+					</section>
+				
+					<section class="column">
+						<section>
+							<h3>TRADISJONELL (SEAMLESS) CMS</h3>
+							<p>
+								Tradisjonell (seamless) CMS hjelper til slik at mange flere kan lage, redigere og publisere innhold på sitt eget nettsted. Innhold i et tradisjonelt CMS blir ofte lagret i en database og presentert basert på et sett med maler. Tradisjonelle CMS kan også kalles Web Content Management Systems (WCMS).
+							</p>
+							<h4>
+								Grunnleggende funksjonalitet i et tradisjonelt CMS:
+							</h4>
+							<ul>
+								<li>Brukere kan enkelt lage og redigere innhold.</li>
+								<li>Lagrer innhold på et sted, i gjennomgående stil.</li>
+								<li>Ulike roller får ulike tillatelser og ansvar, for eksempel forfatter/innholds kreatør, redaktører og administratorer.</li>
+								<li>Organiserer og pusher innhold ut, slik at det blir synlig for andre.</li>
+								<li>Inneholder versjonskontroll, så brukere kan gå tilbake til eldre versjoner.</li>
+							</ul>
+							<h4>Fordeler med tradisjonell CMS</h4>
+							<ul>
+								<li>Flere brukere kan logge på og bidra på nettsiden. Fordi grensesnittet ofte er brukt i nettleser, kan det bli åpnet og administrert over alt og av uttalelige antall brukere.</li>
+								<li>Det tillater brukere som ikke kan eller aldri har brukt programmering før og enkelt få til å lage sitt eget nettsted. Drag-and-drop funksjonene som du finner i de fleste tradisjonelle CMS tillater brukere å legge til tekst og laste opp bilder uten å kjenne til hverken HTML eller CSS.</li>
+								<li>Hvis et selskap bruker CMS til å publisere nettsider reduserer det avhengigheten av en front-end utvikler til å gjøre endringer på siden, og gjør det raskere og enklere å publisere nye websider.
+								</li>
+							</ul>
+							<h4>Ulemper med tradisjonell CMS</h4>
+							<ul>
+								<li>Et CMS utgjør en stor sikkerhetsrisiko hvis ikke for eksempel oppdateringer blir regelmessig vedlikeholdt og fulgt opp. Selskapet du bruker kan legge ned siden din om den utgjør stor risiko, for å unngå at sikkerhetshullet leder til andre sider. Kvalifiserte teknikere som kan vedlikeholde og oppgradere programvarer kan fort bli veldig dyrt.</li>
+								<li>De som bruker CMS må lære seg å bruke det, som med alle andre verktøy. Dette kan ta tid, avhengig av hvor teknisk anlagt brukeren er fra før.</li>
+							</ul>
+							<p>
+								Det finnes hundrevis av CMS plattformer, men Wordpress dominerer markedet. Resten av andelene fordeler seg slik diagrammet vises <span class="changetext1">på høyre side</span><span class="changetext2">nedenfor</span>.
+							</p>
+						</section>
+						<section class="piclink">
+								<p>Statestikk hentet fra: <a rel="noopener noreferrer" href="https://webtechsurvey.com/technology/seamlesscms" target="_blank">webtechsurvey.com</a></p> 
+								<figure>
+									<img class="artimg" src="../res/seemless.png" alt="Statestikk over hvordan andelene av CMS fordeler seg på brukere"><!-- Illustrasjon er laget i illustrator, med inspirasjon fra artikkelen linket under bildet -->
+									<figcaption>Statestikk hentet fra: <a rel="noopener noreferrer" href="https://webtechsurvey.com/technology/seamlesscms" target="_blank">webtechsurvey.com</a></figcaption>
+								</figure>
+							</section>
+					</section>
+					<section class="row">
+							<h3>CMS LØSNINGER</h3>
+							<h4>Component Content Management system (CCMS)</h4>
+							<p>
+								CCMS er et system som lar deg administrere innhold på et komponent-nivå. Det gjør at du kan lage og gjenbruke komponenter ned til minste detalj. Systemet overvåker disse komponentene, som gir deg full kontroll og de kan lett oppdateres. Eksempler på CCMS systemer er Sanity og Storyblok (typiske headless CMS.)
+							</p>
+							<h4>Document Management System (DMS)</h4>
+							<p>
+								Bruker datasystem og software til å lagre, administrere og overvåke/spore elektroniske dokumenter og bilder av papirbasert informasjon som er innhentet via en dokumentskanner. For eksempel PDF Reader. I tillegg til å være øko-vennlig, sikkert og ryddig, gjør det papirdelingsprosessene enklere. Eksempler på DMS er Dropbox og Google Drive.
+							</p>
+							<h4>Enterprise Content Management System (ECM)</h4>
+							<p>
+								ECM er et sett av definerte prosesser, strategier og verktøy som hjelper bedrifter med å enkelt opprettholde, lagre og levere sensitiv og/eller kritisk informasjon til ansatte, stakeholdere og kunder. Eksempler på ECM er Canvas og eHandel.
+							</p>
+					</section>
+					<section>
+						<h4>Sammenligning av noen av de ulike CMS løsningene:</h4>		
+						<section class="cms-table">
+							<section><p class="empty">Tom kolonne</p></section>
+							<p class="boldie">FORDELER</p>
+							<p class="boldie">ULEMPER</p>
+							<p class="boldie">LIKHETER</p>
+							<p class="boldie">ULIKHETER</p>
+
+							<p class="boldie">CCMS</p>
+							<p class="p-start">Effektivt å administrere, enkel å oppdatere, går raskt å publisere</p>
+							<p class="p-start">Krever endret tilnærming til hvordan innhold skapes.</p>
+							<p class="p-start">Versjonskontroll og innholdsdeling</p>
+							<p class="p-start">Organiserer innhold i små komponenter som kan gjenbrukes flere steder.</p>
+
+							<p class="boldie">DMS</p>
+							<p class="p-start">Det er øko-vennlig, ryddig og du har tilgang til dokumentene hvor som helst</p>
+							<p class="p-start">Mye usikkerhet for eldre som ikke stoler på den digitale lagringen</p>
+							<p class="p-start">Versjonskontroll og innholdsdeling</p>
+							<p class="p-start">Fokusert på dokumentbasert deling</p>
+
+							<p class="boldie">ECM</p>
+							<p class="p-start">Enkel og effektiv kommunikasjon mellom ledd i en bedrift</p>
+							<p class="p-start">Forbeholdt autoriserte brukere</p>
+							<p class="p-start">Versjonskontroll og innholdsdeling</p>
+							<p class="p-start">Fokusert på innholdsdeling innad i en bedrift</p>
+
+							<p class="boldie">WCMS</p>
+							<p class="p-start">Enkelt å bruke uten erfaring med kode</p>
+							<p class="p-start">Forhøyet risiko for hacking. Krever jevnlig vedlikehold</p>
+							<p class="p-start">Versjonskontroll og innholdsdeling</p>
+							<p class="p-start">Kun for publisering av sider og innhold på nett.</p>
+						</section>
+						<!--Mobiltabell-->
+						<section class="cms-table-mobile">
+							<p class="big-boldie">CCMS</p>
+							<p class="empty">Tom kolonne</p>
+							<p class="lil-boldie">FORDELER</p>
+							<p class="t-p">Effektivt å administrere, enkel å oppdatere, går raskt å publisere</p>
+							<p class="lil-boldie">ULEMPER</p>
+							<p class="t-p">Krever endret tilnærming til hvordan innhold skapes.</p>
+							<p class="lil-boldie">LIKHETER</p>
+							<p class="t-p">Versjonskontroll og innholdsdeling</p>
+							<p class="lil-boldie last-col">ULIKHETER</p>
+							<p class="t-p last-col">Organiserer innhold i små komponenter som kan gjenbrukes flere steder.</p>
+						</section>
+
+						<section class="cms-table-mobile">
+							<p class="big-boldie">DMS</p>
+							<p class="empty">Tom kolonne</p>
+							<p class="lil-boldie">FORDELER</p>
+							<p class="t-p">Det er øko-vennlig, ryddig og du har tilgang til dokumentene hvor som helst</p>
+							<p class="lil-boldie">ULEMPER</p>
+							<p class="t-p">Mye usikkerhet for eldre som ikke stoler på den digitale lagringen</p>
+							<p class="lil-boldie">LIKHETER</p>
+							<p class="t-p">Versjonskontroll og innholdsdeling</p>
+							<p class="lil-boldie last-col">ULIKHETER</p>
+							<p class="t-p last-col">Dokumentbasert</p>
+						</section>
+
+						<section class="cms-table-mobile">
+							<p class="big-boldie">ECM</p>
+							<p class="empty">Tom kolonne</p>
+							<p class="lil-boldie">FORDELER</p>
+							<p class="t-p">Enkel og effektiv kommunikasjon mellom ledd i en bedrift</p>
+							<p class="lil-boldie">ULEMPER</p>
+							<p class="t-p">Forbeholdt autoriserte brukere</p>
+							<p class="lil-boldie">LIKHETER</p>
+							<p class="t-p">Versjonskontroll og innholdsdeling</p>
+							<p class="lil-boldie last-col">ULIKHETER</p>
+							<p class="t-p last-col">Fokusert på innholdsdeling innad i en bedrift</p>
+						</section>
+						
+						<section class="cms-table-mobile">
+							<p class="big-boldie">WCMS</p>
+							<p class="empty">Tom kolonne</p>
+							<p class="lil-boldie">FORDELER</p>
+							<p class="t-p">Enkelt å bruke uten erfaring med kode</p>
+							<p class="lil-boldie">ULEMPER</p>
+							<p class="t-p">Forhøyet risiko for hacking. Krever jevnlig vedlikehold</p>
+							<p class="lil-boldie">LIKHETER</p>
+							<p class="t-p">Versjonskontroll og innholdsdeling</p>
+							<p class="lil-boldie last-col">ULIKHETER</p>
+							<p class="t-p last-col">Kun for publisering av sider og innhold på nett.</p>
+						</section>
+					</section>
+				</article>
+			</main>
+			<aside>
+				<h3>KILDER</h3>
+				<ul>
+					<li><a rel="noopener noreferrer" href="https://medium.com/evodeck/responsive-data-tables-with-css-grid-3c58ecf04723" target="_blank">Responsiv tabell med CSS Grid</a></li>
+					<li><a rel="noopener noreferrer" href="https://www.contentful.com/r/knowledgebase/what-is-headless-cms/#what-is-a-headless-cms " target="_blank">Hva er et headless CMS</a></li>
+					<li><a rel="noopener noreferrer" href="https://www.youtube.com/watch?v=av2CL4nusg4 " target="_blank">Headless CMS vs tradisjonell CMS</a></li>
+					<li><a rel="noopener noreferrer" href="https://webtechsurvey.com/technology/seamlesscms" target="_blank">Tradisjonell CMS Markedsandeler</a></li>
+					<li><a rel="noopener noreferrer" href="https://heretto.com/what-is-a-component-content-management-system/" target="_blank">Hva er et CCMS?</a></li>
+					<li><a rel="noopener noreferrer" href="https://www.techtarget.com/searchcontentmanagement/definition/enterprise-content-management-ECM" target="_blank">Hva er et ECMS?</a></li>
+					<li><a rel="noopener noreferrer" href="https://www.ixiasoft.com/types-of-content-management-systems/" target="_blank">5 typer CMS-løsninger</a></li>
+				</ul>
+			</aside>
+			<footer>
+				<p>
+					Anna Marita Meum || ammeum@hiof.no
+				</p>
+				<p>
+					Eksamen i Webutvikling 2022
+				</p>
+				<!-- Delingsknapper -->
+				<section class="icon-sec">
+					<a href="#" class="fa fa-facebook"></a>
+					<a href="#" class="fa fa-twitter"></a>
+					<a href="#" class="fa fa-pinterest"></a>
+				</section>
+			</footer>
+		</div>
+	</body>
+</html>
